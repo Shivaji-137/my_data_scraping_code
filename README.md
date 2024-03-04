@@ -3,7 +3,7 @@
 I have written a code to search a paper in terminal from journal in Arxiv and google scholars using Beautifulsoup in python.
 It can search a paper, show it in terminal with title, catalog, date, show abstract of the title and even you can browser it or can even directly download the paper into your computer without going to the browser, alll from terminal.
 
-It only runs from linux terminal and command prompt.
+It only runs from linux terminal and command prompt in windows.
 
 To run arxiv_scrape.py,
 
