@@ -1,4 +1,6 @@
 # merojob_scraping_code
+You can see my project on coursera https://www.coursera.org/account-profile
+
 I have written a code for Scraping jobs in pandas dataframe from https://merojob.com/ , a forefront of connecting job seekers and employers in Nepal.
 
 Here, pass the job you want to search for and it shows the jobs information in pandas dataframe.
