@@ -11,8 +11,6 @@ except ImportError as e:
 def contents(content, time, pages=0):
     """you can rename this file as url.py for simplicity
     use this command: python3 url.py* your_query. 
-    for example:
-    python3 url.py fast fourier transform
     *assuming you have renamed this file as url.py"""
     links = []
     title = []
