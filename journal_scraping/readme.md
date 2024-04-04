@@ -49,10 +49,11 @@ Here arg1 takes title content you want to search for. For single world, pass tit
 Note: scholar_scrape.py should be in current working directory. If not, specifies full path
 
 for example:
+
 ---------------------------------------------------------
-python scholar_scrape.py "Gravitational wave" 2024           - for 2024 year
+python scholar_scrape.py "Gravitational wave" 2024           
 
 
-python scholar_scrape.py "Gravitational wave" all       - for any time
+python scholar_scrape.py "Gravitational wave" all      
 
 ----------------------------------------------------------
