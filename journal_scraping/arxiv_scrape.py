@@ -90,7 +90,7 @@ if __name__ == "__main__":
             elif link_choice.lower() == 'a':
                   choice = int(input("Enter the number of the title which you want to see abstract of: "))
                   arxiv(content, abs_state, sort_results, page).abstract(choice) 
-                  ask = input("Do you wanna open the pdf in browser or download it or continue further? 'y' for yes or 'd' for download or 'c' for continue:")
+                  ask = input("Do you wanna open the pdf in browser or download it in your pc or continue further? 'y' for yes or 'd' for download or 'c' for continue:")
                   if ask == "d":  
                       file_name = title[choice-1][:20]            
                       file_na = open(f"{file_name}.pdf","wb")
@@ -121,9 +121,33 @@ if __name__ == "__main__":
                 os.system('cls')
             else:
                 os.system('clear')
-            
+    elif sys.argv[1] == "help":
+         docstring = """ A journal scraping code from arxiv only by Shivaji Chaulagain.
+         ---------------------------------------------------------------------------------------------------------------
+It can search a paper, show it in terminal with title, catalog, date, show abstract of the title and even you can browser it or can even directly download the paper into your computer without going to the browser, alll from terminal.
+
+It only runs from linux terminal and command prompt in windows. For better visualization, please maximize your terminal.
+-------------------------------------------------------------------------------------------------------------------------------
+To run arxiv_scrape.py,
+-------------------------------------------------------------------
+Use:
+-------------------------------------------------------------------
+python arxiv_scrape.py arg1 arg2 arg3
+------------------------------------------------------------------------------------------------------
+Here arg1 takes title content you want to search for. For single world, pass title_name as arg1 but for multiple words use "title_name". Here arg2 takes abstract state. Abstract state is either show or hide.
+
+Here arg3 takes either old or new paper. so pass either old or new
+
+Note: arxiv_scrape.py should be in current working directory. If not, specifies full path
+
+for example:
+---------------------------------------------------------
+python arxiv_scrape.py "Gravitational wave" show new
+----------------------------------------------------------
+===> It searches latest new paper on Gravitational wave in arxiv with abstract state show """
+         print(docstring)
     else:
-        print("Please provide a search query.")
+         print("Please provide a search query.")
         
 
       
