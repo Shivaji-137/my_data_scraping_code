@@ -33,12 +33,16 @@ A journal scraping code from google scholar, for personal purpose only, by Shiva
 It can search a paper, show it in terminal with title, published date and citation and even you can browser it or can even directly download the paper (if only pdf is available) into your computer without going to the browser, alll from terminal.
 
 It only runs from linux terminal and command prompt in windows. For better visualization, please maximize your terminal.
+
 -------------------------------------------------------------------------------------------------------------------------------
 To run scholar_scrape.py,
+
 -------------------------------------------------------------------
 Use:
+
 -------------------------------------------------------------------
 python scholar_scrape.py arg1 arg2 
+
 ------------------------------------------------------------------------------------------------------
 Here arg1 takes title content you want to search for. For single world, pass title_name as arg1 but for multiple words(inside double quotes) use "title_name". Here arg2 takes time. In arg2, pass 'all' for any time or pass year_number for specific year
 
@@ -46,6 +50,9 @@ Note: scholar_scrape.py should be in current working directory. If not, specifie
 
 for example:
 ---------------------------------------------------------
-python scholar_scrape.py "Gravitational wave" 2024      - for 2024 year
+python scholar_scrape.py "Gravitational wave" 2024           - for 2024 year
+
+
 python scholar_scrape.py "Gravitational wave" all       - for any time
+
 ----------------------------------------------------------
